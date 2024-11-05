@@ -52,12 +52,14 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Software Developer Portfolio"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+            Hello, I&apos;m <span className="text-purple">Hashir Baig</span>, a
+            passionate Software Development student driven to create innovative
+            solutions and continuously expand my skills in the tech world
           </p>
 
           <a href="#about">
