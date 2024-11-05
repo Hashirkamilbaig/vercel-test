@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
+import { MdSportsCricket, MdSportsGymnastics } from "react-icons/md";
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
-
 import { BackgroundGradientAnimation } from "./GradientBg";
-import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { FaGuitar, FaMusic } from "react-icons/fa6";
+import { FaTableTennis } from "react-icons/fa";
+import { GiSoccerKick } from "react-icons/gi";
 
 export const BentoGrid = ({
   className,
@@ -52,8 +54,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "NextJS", "C#"];
+  const rightLists = ["Java", "Python", "NodeJS"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,7 +69,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "hashirkamilbaig2003@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -99,8 +101,9 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
             <img
@@ -125,43 +128,52 @@ export const BentoGridItem = ({
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
-            {description}
-          </div>
-          {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
-          {/* remove mb-2 mt-2 */}
-          <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
-          >
-            {title}
-          </div>
+          {id !== 1 && id !== 3 && (
+            <>
+              <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+                {description}
+              </div>
+              {/* Add text-3xl max-w-96, remove text-neutral-600 dark:text-neutral-300 */}
+              {/* Remove mb-2 mt-2 */}
+              <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10">
+                {title}
+              </div>
+            </>
+          )}
 
-          {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
+          {id === 3 && (
+            <>
+              <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 text-right">
+                {title}
+              </div>
+              <div className="font-sans font-extralight text-sm lg:text-base text-[#C1C2D3] z-10 leading-relaxed max-w-md lg:max-w-lg mt-2 text-right">
+                {description}
+              </div>
+            </>
+          )}
 
           {/* Tech stack list div */}
-          {id === 3 && (
+          {id === 2 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="lg:py-2 lg:px-1 py-1 px-2 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-2 lg:px-1 py-2 px-1  rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
+                <span className="lg:py-2 lg:px-1 py-2 px-1  rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-2 lg:px-1 py-1  text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -176,8 +188,9 @@ export const BentoGridItem = ({
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
@@ -191,6 +204,50 @@ export const BentoGridItem = ({
                 otherClasses="!bg-[#161A31]"
               />
             </div>
+          )}
+
+          {id === 3 && (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -left-3 lg:-left-2">
+              {/* tech stack lists */}
+              <div className="pl-3 flex flex-col gap-3 md:gap-3 lg:gap-8">
+                {[<GiSoccerKick />, <MdSportsCricket />, <FaTableTennis />].map(
+                  (item, i) => (
+                    <span
+                      key={i}
+                      className="lg:py-2 lg:px-1 py-1 px-2 text-xs lg:text-base opacity-50 
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    >
+                      {item}
+                    </span>
+                  )
+                )}
+                <span className="lg:py-2 lg:px-1 py-2 px-1  rounded-lg text-center bg-[#10132E]"></span>
+              </div>
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+                <span className="lg:py-2 lg:px-1 py-2 px-1  rounded-lg text-center bg-[#10132E]"></span>
+                {[<FaMusic />, <FaGuitar />, <MdSportsGymnastics />].map(
+                  (item, i) => (
+                    <span
+                      key={i}
+                      className="lg:py-2 lg:px-1 py-1  text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    >
+                      {item}
+                    </span>
+                  )
+                )}
+              </div>
+            </div>
+          )}
+
+          {id === 1 && (
+            <>
+              <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10">
+                {title}
+              </div>
+              <div className="font-sans font-extralight text-sm lg:text-base text-[#C1C2D3] z-10 leading-relaxed max-w-md lg:max-w-lg mt-2">
+                {description}
+              </div>
+            </>
           )}
         </div>
       </div>

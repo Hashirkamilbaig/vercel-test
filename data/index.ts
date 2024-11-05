@@ -8,8 +8,10 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
+    title:
+      "Third-Year Computer Science Student at UVic | Bringing Fresh Ideas and Technical Skills to Every Project",
+    description:
+      "With a strong foundation in Python, C#, Java, and web development, I’m passionate about turning complex problems into user-friendly solutions. I thrive on collaboration and am always eager to learn and apply the latest in tech to deliver innovative results.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -18,18 +20,18 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
+    title: "My Expertise",
+    description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
-    titleClassName: "justify-start",
+    titleClassName: "justify-center",
     img: "",
     spareImg: "",
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Venture Vortex",
+    description: "Where creativity takes birth",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
