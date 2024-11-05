@@ -210,31 +210,35 @@ export const BentoGridItem = ({
             <div className="flex gap-1 lg:gap-5 w-fit absolute -left-3 lg:-left-2">
               {/* tech stack lists */}
               <div className="pl-3 flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {[<GiSoccerKick />, <MdSportsCricket />, <FaTableTennis />].map(
-                  (item, i) => (
-                    <span
-                      key={i}
-                      className="lg:py-2 lg:px-1 py-1 px-2 text-xs lg:text-base opacity-50 
+                {[
+                  <GiSoccerKick key="soccer" />,
+                  <MdSportsCricket key="cricket" />,
+                  <FaTableTennis key="tabletennis" />,
+                ].map((item, i) => (
+                  <span
+                    key={i}
+                    className="lg:py-2 lg:px-1 py-1 px-2 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
+                  >
+                    {item}
+                  </span>
+                ))}
                 <span className="lg:py-2 lg:px-1 py-2 px-1  rounded-lg text-center bg-[#10132E]"></span>
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 <span className="lg:py-2 lg:px-1 py-2 px-1  rounded-lg text-center bg-[#10132E]"></span>
-                {[<FaMusic />, <FaGuitar />, <MdSportsGymnastics />].map(
-                  (item, i) => (
-                    <span
-                      key={i}
-                      className="lg:py-2 lg:px-1 py-1  text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
+                {[
+                  <FaMusic key="music" />,
+                  <FaGuitar key="guitar" />,
+                  <MdSportsGymnastics key="gymnastics" />,
+                ].map((item, i) => (
+                  <span
+                    key={i}
+                    className="lg:py-2 lg:px-1 py-1  text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
           )}
