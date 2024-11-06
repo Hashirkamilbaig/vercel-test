@@ -217,8 +217,7 @@ export const BentoGridItem = ({
                 ].map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-2 lg:px-1 py-1 px-2 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-2 lg:px-1 py-1  text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center w-20 sm:w-10 flex justify-center items-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -234,7 +233,7 @@ export const BentoGridItem = ({
                 ].map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-2 lg:px-1 py-1  text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-2 lg:px-1 py-1  text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center w-20 sm:w-10 flex justify-center items-center bg-[#10132E]"
                   >
                     {item}
                   </span>
