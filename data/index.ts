@@ -79,14 +79,14 @@ export const projects = [
     des: "Built a 3D portfolio with React, Three.js, and Tailwind CSS, featuring interactive animations and a responsive layout to showcase my skills and projects.",
     img: "/images/p1.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/Hashirkamilbaig?tab=repositories",
+    link: "https://github.com/Hashirkamilbaig/vercel-test",
   },
   {
     id: 2,
     title: "Habibis Kitchen",
     des: "A dynamic game built using advanced C# features like classes, scriptable objects, and custom scripts, alongside Unity’s prefabs, sprites, and animations to bring the game’s visuals to life.",
     img: "/images/p22.jpg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/gitcontrol.svg", "/unity.svg", "/csharp.svg"],
     link: "https://github.com/Hashirkamilbaig?tab=repositories",
   },
 ];

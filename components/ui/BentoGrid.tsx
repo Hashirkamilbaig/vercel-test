@@ -11,8 +11,9 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 import { FaGuitar, FaMusic } from "react-icons/fa6";
-import { FaTableTennis } from "react-icons/fa";
+import { FaTableTennis, FaGithub } from "react-icons/fa";
 import { GiSoccerKick } from "react-icons/gi";
+import { CiInstagram, CiLinkedin, CiTwitter, CiFacebook } from "react-icons/ci";
 
 export const BentoGrid = ({
   className,
@@ -128,7 +129,7 @@ export const BentoGridItem = ({
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          {id !== 1 && id !== 3 && (
+          {id !== 1 && id !== 3 && id !== 4 && (
             <>
               <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
                 {description}
@@ -251,6 +252,43 @@ export const BentoGridItem = ({
                 {description}
               </div>
             </>
+          )}
+
+          {id === 4 && (
+            <div className="flex gap-4 items-center justify-center">
+              {[
+                {
+                  icon: <CiInstagram size={60} />,
+                  link: "https://www.instagram.com/m.hashir.kb/",
+                },
+                {
+                  icon: <CiTwitter size={60} />,
+                  link: "https://x.com/hashirkamilbaig",
+                },
+                {
+                  icon: <CiFacebook size={60} />,
+                  link: "https://www.facebook.com/hashirkamilbaig",
+                },
+                {
+                  icon: <CiLinkedin size={60} />,
+                  link: "https://www.linkedin.com/in/muhammad-hashir-kamil-baig-ba6bb58a/",
+                },
+                {
+                  icon: <FaGithub size={60} />,
+                  link: "https://github.com/Hashirkamilbaig",
+                },
+              ].map((item, index) => (
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-center pt-6"
+                >
+                  {item.icon}
+                </a>
+              ))}
+            </div>
           )}
         </div>
       </div>
