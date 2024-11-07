@@ -25,7 +25,7 @@ const RecentProjects = () => {
               title="https://github.com/Hashirkamilbaig"
               href="https://github.com/Hashirkamilbaig"
             >
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] sm:h-[40vh] h-[30vh] overflow-hidden mb-10">
+              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] sm:h-[40vh] h-auto overflow-hidden mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -44,7 +44,7 @@ const RecentProjects = () => {
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-xl lg:font-normal font-light text-sm"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",

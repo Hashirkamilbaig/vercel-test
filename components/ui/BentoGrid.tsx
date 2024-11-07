@@ -258,23 +258,23 @@ export const BentoGridItem = ({
             <div className="flex gap-4 items-center justify-center">
               {[
                 {
-                  icon: <CiInstagram size={60} />,
+                  icon: <CiInstagram size={55} />,
                   link: "https://www.instagram.com/m.hashir.kb/",
                 },
                 {
-                  icon: <CiTwitter size={60} />,
+                  icon: <CiTwitter size={55} />,
                   link: "https://x.com/hashirkamilbaig",
                 },
                 {
-                  icon: <CiFacebook size={60} />,
+                  icon: <CiFacebook size={55} />,
                   link: "https://www.facebook.com/hashirkamilbaig",
                 },
                 {
-                  icon: <CiLinkedin size={60} />,
+                  icon: <CiLinkedin size={55} />,
                   link: "https://www.linkedin.com/in/muhammad-hashir-kamil-baig-ba6bb58a/",
                 },
                 {
-                  icon: <FaGithub size={60} />,
+                  icon: <FaGithub size={55} />,
                   link: "https://github.com/Hashirkamilbaig",
                 },
               ].map((item, index) => (
