@@ -1,6 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "OtherProjects", link: "#otherprojects" },
   { name: "Education", link: "#education" },
   { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
@@ -103,6 +104,27 @@ export const projects = [
       "cloudin.svg",
     ],
     link: "https://blog-app-five-opal.vercel.app/",
+  },
+];
+
+export const otherProjects = [
+  {
+    title: "Rock Paper Scissors",
+    description:
+      "A fun and interactive game built with HTML, CSS, and JavaScript. It features a sleek design, real-time score tracking, and randomized computer moves for a dynamic user experience. This project showcases my skills in DOM manipulation and implementing game logic.",
+    link: "https://hashirkamilbaig.github.io/Rock-Paper-Scissors-Game/",
+  },
+  {
+    title: "Amazon Clone",
+    description:
+      "I developed an Amazon clone using HTML, CSS, and JavaScript, featuring multiple pages like product listings, checkout, and order tracking. It includes dynamic cart calculations, backend data loading, and OOP-based shopping cart logic. This project highlights my skills in building interactive and scalable web applications.",
+    link: "https://hashirkamilbaig.github.io/Amazon-Clone/amazon.html",
+  },
+  {
+    title: "Video Pacer Extension",
+    description:
+      "This is a Chrome extension called Video Pacer, built using JavaScript. It allows users to control the playback speed of videos on websites efficiently. With a clean structure including manifest files, scripts, and icons, this project demonstrates my ability to develop browser extensions that enhance user experience.",
+    link: "https://github.com/Hashirkamilbaig/Ad-Pacer",
   },
 ];
 

@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { ExpandableCardDemo } from "@/components/Education";
+import OtherProjects from "@/components/OtherProjects";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Hero />
         <Grid />
         <RecentProjects />
+        <OtherProjects />
         <ExpandableCardDemo />
         <Experience />
         <Footer />
