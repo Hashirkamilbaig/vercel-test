@@ -87,7 +87,22 @@ export const projects = [
     des: "A dynamic game built using advanced C# features like classes, scriptable objects, and custom scripts, alongside Unity’s prefabs, sprites, and animations to bring the game’s visuals to life.",
     img: "/images/p22.jpg",
     iconLists: ["/gitcontrol.svg", "/unity.svg", "/csharp.svg"],
-    link: "https://github.com/Hashirkamilbaig?tab=repositories",
+    link: "https://hashirkamilbaig.itch.io/habibis-kitchen",
+  },
+  {
+    id: 3,
+    title: "Blog App",
+    des: "Developed a blog application using MongoDB, React, and Cloudinary for image hosting. Users can create blogs, upload images, and subscribe via email for updates, ensuring a smooth and engaging experience.",
+    img: "/images/blog.jpg",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/three.svg",
+      "mongo.svg",
+      "next.svg",
+      "cloudin.svg",
+    ],
+    link: "https://blog-app-five-opal.vercel.app/",
   },
 ];
 
